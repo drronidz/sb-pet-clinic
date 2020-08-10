@@ -48,11 +48,13 @@ public  class OwnerSDJPAService
 
     @Override
     public Owner findById(Long aLong) {
+
         return ownerRepository.findById(aLong).orElse(null);
     }
 
     @Override
     public Owner save(Owner object) {
+
         return ownerRepository.save(object);
     }
 
@@ -63,6 +65,7 @@ public  class OwnerSDJPAService
 
     @Override
     public void deleteById(Long aLong) {
+
         ownerRepository.deleteById(aLong);
     }
 }
