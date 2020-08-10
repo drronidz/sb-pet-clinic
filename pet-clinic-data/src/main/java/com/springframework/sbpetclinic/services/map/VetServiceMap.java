@@ -34,6 +34,7 @@ public class VetServiceMap
 
     @Override
     public void delete(Vet object) {
+
         super.delete(object);
     }
 
