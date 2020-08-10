@@ -33,21 +33,25 @@ public class PetTypeSDJPAService implements PetTypeService {
 
     @Override
     public PetType findById(Long aLong) {
+
         return petTypeRepository.findById(aLong).orElse(null);
     }
 
     @Override
     public PetType save(PetType object) {
+
         return petTypeRepository.save(object);
     }
 
     @Override
     public void delete(PetType object) {
+
         petTypeRepository.delete(object);
     }
 
     @Override
     public void deleteById(Long aLong) {
+
         petTypeRepository.deleteById(aLong);
     }
 }
