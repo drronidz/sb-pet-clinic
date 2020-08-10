@@ -11,12 +11,15 @@ import java.util.Set;
 
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
+public  class OwnerServiceMap
+        extends AbstractMapService<Owner,Long>
+        implements OwnerService {
 
     private final PetTypeService petTypeService;
     private final PetService petService;
 
-    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+    public OwnerServiceMap(PetTypeService petTypeService,
+                           PetService petService) {
         this.petTypeService = petTypeService;
         this.petService = petService;
     }
@@ -28,11 +31,13 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
 
     @Override
     public void deleteById(Long id) {
+
         super.deleteById(id);
     }
 
     @Override
     public void delete(Owner object) {
+
         super.delete(object);
     }
 
