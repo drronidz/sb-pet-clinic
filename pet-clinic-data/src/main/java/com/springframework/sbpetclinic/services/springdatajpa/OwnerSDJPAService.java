@@ -18,7 +18,7 @@ import java.util.Set;
  * at 5:48 PM
  */
 @Service
-@Profile("springdatajpa")
+@Profile({"springdatajpa"})
 public  class OwnerSDJPAService
         implements OwnerService {
 
@@ -54,7 +54,10 @@ public  class OwnerSDJPAService
 
     @Override
     public Owner save(Owner object) {
-
+        System.out.println("#####################################");
+        System.out.println("#####################################");
+        System.out.println("#####################################");
+        System.out.println("#####################################");
         return ownerRepository.save(object);
     }
 
