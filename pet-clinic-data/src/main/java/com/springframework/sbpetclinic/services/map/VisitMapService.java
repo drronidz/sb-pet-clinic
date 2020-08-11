@@ -2,6 +2,7 @@ package com.springframework.sbpetclinic.services.map;
 
 import com.springframework.sbpetclinic.model.Visit;
 import com.springframework.sbpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -11,6 +12,8 @@ import java.util.Set;
  * on 11, August , 2020
  * at 1:48 AM
  */
+
+@Service
 public class VisitMapService extends AbstractMapService<Visit,Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
