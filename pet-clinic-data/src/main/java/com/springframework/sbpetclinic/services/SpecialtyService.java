@@ -8,5 +8,5 @@ import com.springframework.sbpetclinic.model.Speciality;
  * on 09, August , 2020
  * at 1:05 AM
  */
-public interface SpecialityService extends CrudService<Speciality,Long> {
+public interface SpecialtyService extends CrudService<Speciality,Long> {
 }
